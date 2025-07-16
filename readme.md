@@ -6,15 +6,16 @@
 
 ## 📚 About This Project
 
-This repository is my submission for the Zeru AI/LLM Internship Challenge.
-It demonstrates my ability to design, implement, and analyze a robust, transparent credit scoring system for DeFi wallets using real Aave V2 transaction data.
+This repository is my submission for the Zeru AI Engineer Internship assignment round.
+
+It demonstrates my ability to design, implement, and analyze a robust, transparent credit scoring system for DeFi wallets using real Aave V2 transaction data. The solution is fully original, interpretable, and designed for extensibility.
 
 ---
 
 ## 🧠 Methodology & Approach
 
-- **Feature Engineering:**
-  I extract wallet-level features from raw transaction data, including:
+- **Feature Engineering:**  
+  Extract wallet-level features from raw transaction data, including:
   - Action counts (deposits, borrows, repays, etc.)
   - Total and average amounts per action
   - Activity span and transaction frequency
@@ -22,11 +23,11 @@ It demonstrates my ability to design, implement, and analyze a robust, transpare
   - Behavioral ratios (repay/borrow, redeem/deposit)
   - Liquidation events
 
-- **Scoring Model:**
-  A clear, rule-based model rewards responsible DeFi behavior (repaying, diverse assets, long activity) and penalizes risky or bot-like actions (liquidations, excessive borrowing, inactivity).
+- **Scoring Model:**  
+  A clear, rule-based model rewards responsible DeFi behavior (repaying, diverse assets, long activity) and penalizes risky or bot-like actions (liquidations, excessive borrowing, inactivity).  
   Scores are mapped to the 0-1000 range for easy interpretation.
 
-- **Analysis:**
+- **Analysis:**  
   Score distributions and wallet behavior insights are provided in `analysis.md`, including a histogram and a breakdown of wallet behaviors by score range.
 
 ---
@@ -92,13 +93,6 @@ It demonstrates my ability to design, implement, and analyze a robust, transpare
 
 - All scoring rules are documented in code and this README.
 - No black-box models: every score is explainable and reproducible.
-
----
-
-## 🙋‍♂️ About Me
-
-I am a passionate student, excited to apply for the AI/LLM Internship at Zeru.
-This project reflects my skills in data science, machine learning, and clear technical communication.
 
 ---
 
